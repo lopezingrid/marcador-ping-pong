@@ -3,7 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Marcador de Ping Pong</title>
+
+    <!-- CSS Bulma -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img src="assets/imgs/ping-pong-2.jpg" alt="" />
+                </figure>
+              </div>
+              <header class="card-header">
+                <p class="card-header-title">Marcador de Ping Pong</p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <h1 class="title is-1">
+                    <span id="p1Display">0</span> to
+                    <span id="p2Display">0</span>
+                  </h1>
+                  <p class="subtitle">
+                    Usa los botones de abajo para llevar la puntuación
+                  </p>
+
+                  <label for="pointLimit" class="label is-inline is-large"
+                    >Jugando a
+                  </label>
+
+                  <div class="select is-rounded">
+                    <select name="" id="pointLimit">
+                      <option value="3">3</option>
+                      <option value="5">5</option>
+                      <option value="7">7</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <button
+                  class="button is-primary card-footer-item"
+                  id="p1Button"
+                >
+                  +1 Jugador Uno
+                </button>
+                <button class="button is-info card-footer-item" id="p2Button">
+                  +1 Jugador Dos
+                </button>
+                <button
+                  class="button is-danger card-footer-item"
+                  id="resetButton"
+                >
+                  Reiniciar
+                </button>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
