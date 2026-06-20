@@ -1,0 +1,21 @@
+/* Esto se aplica SOLO en pantallas de tamaño tablet o celular (menos de 768px) */
+@media screen and (max-width: 830px) {
+    .card-footer {
+      flex-direction: column;
+    }
+    
+    .card-footer-item {
+      width: 100%;
+      border-right: none !important; 
+    }
+  
+    .card-footer-item:last-child {
+      border-bottom: none;
+    }
+  }
+
+.card-image img {
+    object-fit: cover;
+}
+
+
